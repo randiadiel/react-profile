@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { MdFingerprint } from "react-icons/md";
+import { DiCode } from "react-icons/di";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { IconContext } from "react-icons/lib";
 import { Button } from "./Button";
@@ -15,6 +15,9 @@ function Navbar() {
   };
   const closeMobileMenu = () => {
     setClick(false);
+  };
+  const scrollToView = (refName) => {
+    this.refs[refName].scrollToView();
   };
   const showButton = () => {
     if (window.innerWidth <= 960) {
@@ -36,8 +39,7 @@ function Navbar() {
         <div className="navbar">
           <div className="navbar-container container">
             <Link to={"/"} className="navbar-logo" onClick={closeMobileMenu}>
-              <MdFingerprint className="navbar-icon" />
-              LAVISH
+              <DiCode className="navbar-icon" />
             </Link>
             <div className="menu-icon" onClick={handleClick}>
               {click ? <FaTimes /> : <FaBars />}
@@ -50,26 +52,49 @@ function Navbar() {
               </li>
               <li className="nav-item">
                 <Link
-                  to="/services"
+                  to="#community_section"
                   className="nav-links"
                   onClick={closeMobileMenu}
                 >
-                  Services
+                  Community
                 </Link>
               </li>
               <li className="nav-item">
                 <Link
-                  to="/products"
+                  to="#certificates_section"
+                  className="nav-links"
+                  onClick={(closeMobileMenu, scrollToView("certificates"))}
+                >
+                  Certificates
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link
+                  to="/portfolio"
                   className="nav-links"
                   onClick={closeMobileMenu}
                 >
-                  Products
+                  Portfolio
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link
+                  to="//github.com/randiadiel"
+                  target="_blank"
+                  className="nav-links"
+                  onClick={closeMobileMenu}
+                >
+                  Github
                 </Link>
               </li>
               <li className="nav-btn">
                 {button ? (
-                  <Link to="/sign-up" className="btn-link">
-                    <Button buttonStyle="btn--outline">SIGN UP</Button>
+                  <Link
+                    to="//wa.me/085882187160/"
+                    target="_blank"
+                    className="btn-link"
+                  >
+                    <Button buttonStyle="btn--outline">Contact Me</Button>
                   </Link>
                 ) : (
                   <Link
@@ -78,7 +103,7 @@ function Navbar() {
                     onClick={closeMobileMenu}
                   >
                     <Button buttonStyle="btn--outline" buttonSize="btn--mobile">
-                      SIGN UP
+                      Contact Me
                     </Button>
                   </Link>
                 )}

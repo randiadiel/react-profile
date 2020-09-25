@@ -11,6 +11,8 @@ function HeroSection({
   headline,
   description,
   buttonLabel,
+  buttonTo,
+  buttonBlank,
   img,
   alt,
   imgStart,
@@ -43,7 +45,7 @@ function HeroSection({
                 >
                   {description}
                 </p>
-                <Link to="/sign-up">
+                <Link to={buttonTo} target={buttonBlank ? "blank" : null}>
                   <Button buttonSize="btn--wide" buttonColor="blue">
                     {buttonLabel}
                   </Button>

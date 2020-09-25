@@ -2,54 +2,30 @@ export const HOME_OBJ_ONE = {
   lightBg: false,
   lightText: true,
   lightTextDesc: true,
-  topLine: "Exclusive Access",
-  headline: "Unlimited Transactions with zero fees",
+  topLine: "Full-Stack Web Developer",
+  headline: "Randi Adiel Gianufian",
   description:
-    "Get access to our exclusive diamond card that allows you to  send unlimited transactions without getting charged any fees",
-  buttonLabel: "Get Started",
-  imgStart: "",
-  img: "images/svg-1.svg",
-  alt: "Credit Card",
+    "A Design-Oriented developer skilled in React.js, Front-end Development (HTML & CSS), Java, and Laravel currently studying in School Of Computer Science from Universitas Bina Nusantara (Binus).",
+  buttonLabel: "Get to know me",
+  buttonTo: "/sign-up",
+  buttonBlank: "",
+  imgStart: "start",
+  img: "images/profile-picture.png",
+  alt: "Randi Adiel Gianufian",
 };
 
 export const HOME_OBJ_TWO = {
-  lightBg: false,
-  lightText: true,
-  lightTextDesc: true,
-  topLine: "100% SECURE",
-  headline: "Stay protected 24/7 anywhere anytime",
-  description:
-    "We have you covered no matter where you are located. Over 140 locations worldwide to ensure you have access anytime",
-  buttonLabel: "Learn More",
-  imgStart: "",
-  img: "images/svg-5.svg",
-  alt: "Vault",
-};
-
-export const HOME_OBJ_THREE = {
   lightBg: true,
   lightText: false,
   lightTextDesc: false,
-  topLine: "EASY SETUP",
-  headline: "Super fast and simple onboarding process",
+  topLine: "COMMUNITY",
+  headline: "Strong Community experience and social services",
   description:
-    "Get everything set up and ready in under 10 minutes. All you need to do is add your information and you're ready to go.",
-  buttonLabel: "Start Now",
-  imgStart: "start",
+    "I have joined a community called Bina Nusantara Computer Club as an activist and entrusted to be Chief Product Officer.",
+  buttonLabel: "See the community",
+  buttonTo: "//www.bncc.net/",
+  buttonBlank: "_blank",
+  imgStart: "",
   img: "images/svg-7.svg",
-  alt: "Vault",
-};
-
-export const HOME_OBJ_FOUR = {
-  lightBg: false,
-  lightText: true,
-  lightTextDesc: true,
-  topLine: "DATA ANALYTICS",
-  headline: "Every transaction is stored on our secure cloud database",
-  description:
-    "Never ever have to worry again about saved reciepts. We store your data, so you can access it anytime.",
-  buttonLabel: "Sign Up Now",
-  imgStart: "start",
-  img: "images/svg-8.svg",
-  alt: "Vault",
+  alt: "Pan",
 };

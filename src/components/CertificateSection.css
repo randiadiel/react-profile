@@ -1,0 +1,23 @@
+.certificate__page .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 5rem 0;
+}
+
+.certificate__page-head {
+  color: #fff;
+  margin-bottom: 16px;
+  border-bottom: 2px solid #f00946;
+}
+
+.certificate__page .carousel-root {
+  max-width: 800px;
+}
+
+@media screen and (max-width: 991px) {
+  .certificate__page .carousel-root {
+    max-width: 100%;
+  }
+}
