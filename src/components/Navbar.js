@@ -16,9 +16,6 @@ function Navbar() {
   const closeMobileMenu = () => {
     setClick(false);
   };
-  const scrollToView = (refName) => {
-    this.refs[refName].scrollToView();
-  };
   const showButton = () => {
     if (window.innerWidth <= 960) {
       setButton(false);
@@ -48,24 +45,6 @@ function Navbar() {
               <li className="nav-item">
                 <Link to="/" className="nav-links" onClick={closeMobileMenu}>
                   Home
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link
-                  to="#community_section"
-                  className="nav-links"
-                  onClick={closeMobileMenu}
-                >
-                  Community
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link
-                  to="#certificates_section"
-                  className="nav-links"
-                  onClick={(closeMobileMenu, scrollToView("certificates"))}
-                >
-                  Certificates
                 </Link>
               </li>
               <li className="nav-item">

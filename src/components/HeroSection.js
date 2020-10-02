@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Link as LinkScroll } from "react-scroll";
 import { Button } from "./Button";
 import "./HeroSection.css";
 
@@ -12,14 +13,17 @@ function HeroSection({
   description,
   buttonLabel,
   buttonTo,
+  scrollTo,
   buttonBlank,
   img,
   alt,
   imgStart,
+  id,
 }) {
   return (
     <>
       <div
+        id={id}
         className={lightBg ? "home__hero-section" : "home__hero-section darkBg"}
       >
         <div className="container">
@@ -45,11 +49,24 @@ function HeroSection({
                 >
                   {description}
                 </p>
-                <Link to={buttonTo} target={buttonBlank ? "blank" : null}>
-                  <Button buttonSize="btn--wide" buttonColor="blue">
-                    {buttonLabel}
-                  </Button>
-                </Link>
+                {buttonTo === "" ? (
+                  <LinkScroll
+                    to={scrollTo}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                  >
+                    <Button buttonSize="btn--wide" buttonColor="blue">
+                      {buttonLabel}
+                    </Button>
+                  </LinkScroll>
+                ) : (
+                  <Link to={buttonTo} target={buttonBlank ? "blank" : null}>
+                    <Button buttonSize="btn--wide" buttonColor="blue">
+                      {buttonLabel}
+                    </Button>
+                  </Link>
+                )}
               </div>
             </div>
             <div className="col">

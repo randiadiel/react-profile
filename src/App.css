@@ -1,6 +1,23 @@
+@font-face {
+  font-family: "Poppins";
+  src: local("Poppins-Regular"),
+    url(/fonts/Poppins-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Poppins-Medium";
+  src: local("Poppins-Medium"),
+    url(/fonts/Poppins-Medium.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Poppins-Bold";
+  src: local("Poppins-Bold"), url(/fonts/Poppins-Bold.ttf) format("truetype");
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "PT Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
 }

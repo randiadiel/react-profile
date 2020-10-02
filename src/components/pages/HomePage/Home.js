@@ -1,14 +1,15 @@
 import React from "react";
 import CertificateSection from "../../CertificateSection";
 import HeroSection from "../../HeroSection";
-import { HOME_OBJ_ONE, HOME_OBJ_TWO } from "./Data";
+import LandingSection from "../../LandingSection";
+import { HOME_OBJ_TWO } from "./Data";
 
 function Home() {
   return (
     <>
-      <HeroSection {...HOME_OBJ_ONE} />
+      <LandingSection></LandingSection>
       <HeroSection {...HOME_OBJ_TWO} />
-      <CertificateSection></CertificateSection>
+      <CertificateSection id="certificates_section"></CertificateSection>
     </>
   );
 }
