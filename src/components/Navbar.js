@@ -69,7 +69,7 @@ function Navbar() {
               <li className="nav-btn">
                 {button ? (
                   <Link
-                    to="//wa.me/085882187160/"
+                    to="//api.whatsapp.com/send?phone=6285882187160"
                     target="_blank"
                     className="btn-link"
                   >
