@@ -9,7 +9,7 @@ function LandingSection() {
   return (
     <>
       <div className="home__landing-section ">
-        <ReactWOW animation="fadeInUp">
+        <ReactWOW animation="fadeIn" duration="500">
           <div className="container">
             <div className="home__landing-top-line">
               Front-end Web Developer

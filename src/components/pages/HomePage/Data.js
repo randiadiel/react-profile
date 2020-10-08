@@ -1,21 +1,3 @@
-export const HOME_OBJ_ONE = {
-  lightBg: false,
-  lightText: true,
-  lightTextDesc: true,
-  topLine: "Full-Stack Web Developer",
-  headline: "Randi Adiel Gianufian",
-  description:
-    "A Design-Oriented developer skilled in React.js, Front-end Development (HTML & CSS), Java, and Laravel currently studying in School Of Computer Science from Universitas Bina Nusantara (Binus).",
-  buttonLabel: "Get to know me",
-  buttonTo: "",
-  scrollTo: "community_section",
-  buttonBlank: "",
-  imgStart: "start",
-  img: "images/profile-picture.png",
-  alt: "Randi Adiel Gianufian",
-  id: "home_section",
-};
-
 export const HOME_COMMUNITY = {
   lightBg: false,
   lightText: true,
@@ -29,6 +11,23 @@ export const HOME_COMMUNITY = {
   buttonBlank: "_blank",
   imgStart: "",
   img: "images/community-picture.png",
-  alt: "Pan",
+  alt: "Community-RandiAdielGianufian",
   id: "community_section",
+};
+
+export const HOME_DEVELOPER = {
+  lightBg: false,
+  lightText: true,
+  lightTextDesc: true,
+  topLine: "DEVELOPMENT",
+  headline: "Some Experience on Front-End Web Development",
+  description:
+    "I make some web projects for my organizations and some projects for fun.",
+  buttonLabel: "See my portfolio",
+  buttonTo: "/portfolio",
+  buttonBlank: "",
+  imgStart: "start",
+  img: "images/developer-picture.png",
+  alt: "Porfolio-RandiAdielGianufian",
+  id: "developer_section",
 };

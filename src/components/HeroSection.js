@@ -74,7 +74,11 @@ function HeroSection({
             </div>
             <div className="col">
               <div className="home__hero-img-wrapper">
-                <ReactWOW animation="fadeInRight">
+                <ReactWOW
+                  animation={
+                    imgStart === "start" ? "fadeInLeft" : "fadeInRight"
+                  }
+                >
                   <img src={img} alt={alt} className="home__hero-img" />
                 </ReactWOW>
               </div>
