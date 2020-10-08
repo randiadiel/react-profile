@@ -16,7 +16,7 @@ export const HOME_OBJ_ONE = {
   id: "home_section",
 };
 
-export const HOME_OBJ_TWO = {
+export const HOME_COMMUNITY = {
   lightBg: false,
   lightText: true,
   lightTextDesc: true,
