@@ -1,0 +1,54 @@
+.code-card {
+  background-color: #fff;
+  border-radius: 25px;
+  width: 18rem;
+  box-shadow: 10px 10px 20px -10px rgba(255, 255, 255, 0.7);
+  height: fit-content;
+  margin-bottom: 30px;
+}
+.code-card-image {
+  border-radius: 25px 25px 0 0;
+  width: 100%;
+}
+
+.code-card-modal-image {
+  width: 60%;
+  margin-bottom: 16px;
+}
+
+.code-card-container {
+  padding: 1rem;
+}
+.code-card-title {
+  font-family: "Poppins-Bold";
+  margin-bottom: 8px;
+}
+.code-card-description {
+  margin-bottom: 16px;
+}
+
+.code-card-modal-close {
+  display: flex;
+  font-size: x-large;
+  justify-content: flex-end;
+  margin-bottom: 8px;
+  transform: translate(16px, 0);
+}
+
+.code-card-modal-close > span {
+  cursor: pointer;
+}
+
+.ReactModal__Overlay {
+  z-index: 1000;
+}
+
+@media screen and (max-width: 991px) {
+  .makeStyles-paper-2 {
+    max-width: 100vh !important;
+    margin: 0 1.5rem;
+  }
+  .code-card-modal-image {
+    width: 100%;
+  }
+}

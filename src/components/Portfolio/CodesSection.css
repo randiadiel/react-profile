@@ -1,0 +1,26 @@
+.portfolio__codes-section {
+  background-color: #1c2237;
+  min-height: 100vh;
+  padding: 3rem 0;
+}
+
+.portfolio__codes-section-cards {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.portfolio__codes-section .container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.portfolio__codes-section-head {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 16px;
+  border-bottom: 2px solid #f00946;
+}
