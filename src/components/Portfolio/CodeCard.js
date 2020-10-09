@@ -7,6 +7,7 @@ import Modal from "@material-ui/core/Modal";
 import Backdrop from "@material-ui/core/Backdrop";
 import Chip from "@material-ui/core/Chip";
 import Grow from "@material-ui/core/Grow";
+import Skeleton from '@material-ui/lab/Skeleton'
 import "./CodeCard.css";
 
 const useStyles = makeStyles((theme) => ({
@@ -28,11 +29,19 @@ const useStyles = makeStyles((theme) => ({
 
 function CodeCard({ name, description, image, link, category }) {
   const [modalIsOpen, setIsOpen] = useState(false);
+  const [onLoad, setOnLoad] = useState(false);
   const classes = useStyles();
   return (
     <>
       <div className="code-card">
-        <img className="code-card-image" src={image} alt={name} />
+      <div className="code-card-image-container">
+        <img onLoad={() => {
+          setTimeout(() => {
+            setOnLoad(!onLoad);
+          },7000);
+        }} className={`${!onLoad ? "hidden" : "animated fadeIn"} code-card-image`} src={image} alt={name} />
+        {!onLoad && <Skeleton className="code-card-skeleton" variant="rect"></Skeleton>}
+      </div>
         <div className="code-card-container">
           <Chip
             size="small"
@@ -71,14 +80,14 @@ function CodeCard({ name, description, image, link, category }) {
           in={modalIsOpen}
           timeout={{ appear: 1000, enter: 1000, exit: 300 }}
         >
-          <div className={classes.paper}>
+          <div className={`${classes.paper} code-card-modal`}>
             <div className="code-card-modal-close">
               <span onClick={() => setIsOpen(!modalIsOpen)}>
                 <MdClose />
               </span>
             </div>
             <div>
-              <img className="code-card-modal-image" src={image} alt={name} />
+            <img className="code-card-modal-image" src={image} alt={name} />
             </div>
             <Chip
               size="small"

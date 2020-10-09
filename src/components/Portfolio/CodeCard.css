@@ -43,8 +43,27 @@
   z-index: 1000;
 }
 
+.code-card-image-container {
+  position: relative;
+}
+
+.code-card-skeleton {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100% !important;
+}
+
+.code-card .hidden {
+  opacity: 0;
+}
+
+.code-card .none {
+  display: none;
+}
+
 @media screen and (max-width: 991px) {
-  .makeStyles-paper-2 {
+  .code-card-modal {
     max-width: 100vh !important;
     margin: 0 1.5rem;
   }
