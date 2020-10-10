@@ -33,19 +33,19 @@ const useStyles = makeStyles((theme) => ({
 function CodeCard({ name, description, image, code, category, links }) {
   const [modalIsOpen, setIsOpen] = useState(false);
   const [onLoad, setOnLoad] = useState(false);
-  const [anchorEl, setAnchorEl] = React.useState(null);
+  const [anchorEl, setAnchorEl] = useState(null);
   const open = Boolean(anchorEl);
   const classes = useStyles();
   return (
     <>
-      <div className="code-card">
+      <div className={`code-card ${onLoad ? "" : "hiddens"}`}>
         <div className="code-card-image-container">
           <img
             onLoad={() => {
               setOnLoad(!onLoad);
             }}
             className={`${
-              !onLoad ? "hidden" : "animated fadeIn"
+              !onLoad ? "hidden onLoading" : "animated fadeIn"
             } code-card-image`}
             src={image}
             alt={name}
@@ -142,7 +142,7 @@ function CodeCard({ name, description, image, code, category, links }) {
               className="code-card-attachment-menu"
             >
               {links.map((l) => (
-                <Link to={l.url} target="_blank">
+                <Link key={l.id} to={l.url} target="_blank">
                   <MenuItem onClick={() => setAnchorEl(null)}>
                     {l.name}
                   </MenuItem>

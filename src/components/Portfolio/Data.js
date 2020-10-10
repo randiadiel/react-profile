@@ -9,16 +9,24 @@ export const CODES = [
     category: "Personal",
     links: [
       {
+        id: 1,
         name: "App Spec",
         url: "//paper.dropbox.com/doc/Spec-Siaga-corona-App-vucqShXv8kjH6bVsIzUGH"
       },
       {
+        id: 2,
         name: "APK Installer",
         url: ""
       },
       {
+        id: 3,
         name: "Bootcamp Certificate",
         url: "//drive.google.com/file/d/1hFm31xfLRC6d4CYB_JOeDTgtE7j_9w2E/view?usp=sharing"
+      },
+      {
+        id: 4,
+        name: "LinkedIn Post",
+        url: "//www.linkedin.com/posts/randiadiel_android-programming-training-ugcPost-6717853636766109696-f-lb"
       }
     ]
   },
@@ -32,6 +40,7 @@ export const CODES = [
     category: "Organization",
     links: [
       {
+        id: 1,
         name: "Official Website",
         url: "//webinar.bncc.net/kbrs-tmjk-ragz/"
       }
@@ -80,10 +89,12 @@ export const CODES = [
     category: "Organization",
     links: [
       {
+        id: 1,
         name: "Official Website",
         url: "//virtualconference.bncc.net"
       },
       {
+        id: 2,
         name: "Mockups",
         url: "//figma.com"
       }
@@ -93,7 +104,7 @@ export const CODES = [
     id: 7,
     name: "Pindia Website",
     description:
-      'At 2020, me and my friends is assigned by our lecturer to make a design and app concept for business. My team, wants to make an e-commerce made for renting items for a period of time called "Pindia". But, me and my team are challenged to make the web real. So we have decided to code some of the existing mock up available for fun. Only some features are finished though, but it was my first app build just for fun.',
+      'At 2020, me and my friends are assigned by our lecturer to make a design and app concept for business. My team, wants to make an e-commerce made for renting items for a period of time called "Pindia". But, me and my team are challenged to make the web real. So we have decided to code some of the existing mock up available for fun. Only some features are finished though, but it was my first app build just for fun.',
     image: "images/projects/pindia/screen.png",
     code: "//github.com/randiadiel/pindia-fe",
     category: "Personal",

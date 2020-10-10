@@ -1,3 +1,7 @@
+.d-none {
+  display: none;
+}
+
 .code-card {
   background-color: #fff;
   border-radius: 25px;
@@ -66,8 +70,13 @@
   cursor: pointer;
 }
 
-.code-card .hidden {
+.hidden {
   opacity: 0;
+}
+
+.code-card .onLoading {
+  opacity: 0;
+  min-height: 120px;
 }
 
 .code-card .none {
