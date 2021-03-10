@@ -12,7 +12,7 @@ function LandingSection() {
         <ReactWOW animation="fadeIn" duration="500">
           <div className="container">
             <div className="home__landing-top-line">
-              Front-end Web Developer
+              Front-end Web Developer and Product Enthusiast
             </div>
             <div className="home__landing-title">Randi Adiel Gianufian</div>
             <p className="home__landing-subtitle">

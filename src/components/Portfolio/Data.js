@@ -122,4 +122,20 @@ export const CODES = [
     links: [
     ]
   },
+  {
+    id: 9,
+    name: "Joyokost Website",
+    description:
+        'Ordinary Freelance Project.',
+    image: "images/projects/joyokost/screen.png",
+    code: "//",
+    category: "Freelance",
+    links: [
+      {
+        id: 1,
+        name: "Official Website",
+        url: "//joyokost.com"
+      }
+    ]
+  },
 ];
