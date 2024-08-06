@@ -1,12 +1,13 @@
-import Masonry from "react-responsive-masonry"
+import { PiSquaresFourFill } from "react-icons/pi";
+import Notes from "./_views/Notes";
 
 export default function Home() {
   return (
-    <main className="p-5">
+    <main className="max-w-screen-md mx-auto p-5">
       {/* Title */}
       <div className="w-full flex justify-between items-start">
-        <h1 className="text-5xl w-20 font-bold">My Notes</h1>
-        <div className="flex justify-center items-center w-10 h-10 rounded-full bg-stone-500">X</div>
+        <h1 className="text-5xl w-20 font-bold">Randi&apos;s Notes</h1>
+        <div className="flex justify-center items-center w-10 h-10 rounded-full bg-stone-800"><PiSquaresFourFill /></div>
       </div>
 
       {/* Category Chip */}
@@ -16,11 +17,7 @@ export default function Home() {
       </div>
 
       {/* Notes Itself */}
-                <Masonry columnsCount={2}>
-                    <div className="bg-red-500 rounded-full p-5">Testing</div>
-                    <div className="bg-red-500 rounded-full p-5">Testing</div>
-                    <div className="bg-red-500 rounded-full p-5">Testing</div>
-                </Masonry>
+      <Notes />
     </main>
   );
 }
