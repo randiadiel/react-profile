@@ -8,12 +8,12 @@ export const NOTES = [
         ],
         color: '#f7d44c',
         "content": <>
-            Testing notest hellohellohellooo worlddd halo workdllll
+            Testing no test hello hellohellooo worlddd halo workdllll
         </>
     },
     {
         "id": "bncc-x-2",
-        "title": "BNCC?",
+        "title": "Working Experience?",
         "tag": [
             "Organizational",
             "Experiences"
