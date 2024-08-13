@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
 import { Manrope } from "next/font/google";
 import "./globals.css";
+import Providers from "./providers";
 
 const manrope = Manrope({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Randi Adiel Gianufian",
-  description: "notes of my life.",
+  description: "Notes of my life.",
 };
 
 export default function RootLayout({
@@ -16,7 +17,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={manrope.className}>{children}</body>
+      <Providers>
+        <body className={manrope.className}>{children}</body>
+      </Providers>
     </html>
   );
 }

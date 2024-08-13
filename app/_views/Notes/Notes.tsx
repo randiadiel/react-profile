@@ -1,9 +1,7 @@
 import MasonryWrapper from './_components/MasonryWrapper'
 
 const Notes = () => {
-    return (<MasonryWrapper>
-        
-    </MasonryWrapper>);
+    return <MasonryWrapper />;
 }
 
 export default Notes;

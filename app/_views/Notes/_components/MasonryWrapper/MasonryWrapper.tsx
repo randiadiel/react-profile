@@ -1,6 +1,7 @@
 "use client"
 
-import { Masonry } from 'react-plock'
+import Link from 'next/link';
+import { Masonry } from 'react-plock';
 
 import { NOTES } from '@/app/_constants';
 
@@ -13,10 +14,14 @@ const MasonryWrapper = () => {
             }}
             items={NOTES}
             render={
-                (props) => <div key={props.id} style={{ background: props.color, color: "black" }} className="rounded-[20px] p-5">
-                    <h3 className='text-xl font-black'>{props.title}</h3>
-                    <p>{props.content}</p>
-                </div>
+                (props) => <Link href={`/${props.id}`}>
+                    <div key={props.id} style={{ background: props.color, color: "black", maxHeight: "290px", overflow: 'hidden' }} className="rounded-[20px] p-5">
+                        <div style={{ overflow: "hidden", height: "100%" }}>
+                            <h3 className='text-xl font-black'>{props.title}</h3>
+                            <p>{props.content}</p>
+                        </div>
+                    </div>
+                </Link>
             }
         /></>;
 }
